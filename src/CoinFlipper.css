@@ -1,0 +1,28 @@
+.coin-flipper {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.coin-flipper .coin-flipper-holder {
+  display: flex;
+  flex-flow: column;
+  width: 61%;
+  justify-content: center;
+}
+
+.coin-flipper-logo {
+  animation: coin-flipper-logo-spin infinite 20s linear;
+  height: 40vmin;
+
+}
+
+@keyframes coin-flipper-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

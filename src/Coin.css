@@ -1,0 +1,20 @@
+.coin {
+    width: 100%;
+}
+
+.coin .spinning {
+    animation-name: coin-spinning;
+    animation-iteration-count: 5;
+
+}
+
+
+
+@keyframes coin-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
