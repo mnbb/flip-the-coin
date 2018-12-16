@@ -6,9 +6,11 @@ class CoinFlipper extends React.Component {
   render() {
     return (
       <div className="coin-flipper">
-        <div className="coin-flipper-holder">
+        <div className="coin-flipper-center">
           <span>TAP TO FLIP</span>
-          <Coin />
+          <div className="coin-wrapper">
+            <Coin />
+          </div>
         </div>
       </div>
     );
