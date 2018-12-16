@@ -1,20 +1,24 @@
 .coin {
-    width: 100%;
+    height: 25rem;
+    width: 25rem;
 }
 
-.coin .spinning {
+.coin-spin {
+    width: 25rem;
     animation-name: coin-spinning;
-    animation-iteration-count: 5;
-
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
-
 
 @keyframes coin-spinning {
-    from {
-      transform: rotate(0deg);
+    0% {
+        height: 25rem;
     }
-    to {
-      transform: rotate(360deg);
+    25% {
+        height: 12.5rem;
+    }
+    100% {
+        height: .5rem;
     }
   }
