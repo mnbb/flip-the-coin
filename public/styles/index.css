@@ -9,12 +9,35 @@ body {
 }
 
 html, body, #root {
+  background: #35383f;
+  color: #32bfa7;
   height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+button {
+    background: none;
+    margin: 15px;
+    padding: 15px;
+    color: #32bfa7;
+    border: solid 2px #32bfa7;
+    border-radius:15px;
+  }
+  
+  input[type="text"]{
+    background: #ffffff2b;
+    border: solid #32bfa7;
+    padding: 12px;
+    border-radius: 10px;
+    color: #32bfa7;
+}
+
+.main{
+  width: 80%;
+  margin: auto;
 }
 
 .coin-flipper {
@@ -41,6 +64,21 @@ code {
   animation: coin-flipper-logo-spin infinite 20s linear;
   height: 40vmin;
 
+}
+
+.AFUERA{
+  color: blue;
+  font-weight: bold;
+}
+
+.GANÓ{
+  color: green;
+  font-weight: bold;
+}
+
+.ADENTRO{
+  color: red;
+  font-weight: bold;
 }
 
 @keyframes coin-flipper-logo-spin {

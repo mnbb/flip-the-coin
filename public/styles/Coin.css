@@ -1,17 +1,27 @@
 .coin-holder {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 25rem;
-}
-
-.coin-holder .coin {
-    height: 25rem;
-    width: 25rem;
+  }
+  
+  .coin-holder .coin {
+    height: 15rem;
+    width: 15rem;
+    flex-shrink: 0;
+  }
+  
+.holder{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  flex-shrink: 0;
 }
 
 .coin-spin {
-    width: 25rem;
+    width: 15rem;
     animation-name: coin-spinning;
     animation-duration: 120ms;
     animation-iteration-count: infinite;
@@ -19,12 +29,13 @@
 }
 
 .selected {
-  border: 1px solid black
+  border: solid 2px #32bfa7;
+  border-radius:15px;
 }
 
 @keyframes coin-spinning {
     0% {
-        height: 25rem;
+        height: 15rem;
     }
     25% {
         height: 12.5rem;

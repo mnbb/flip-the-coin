@@ -43,24 +43,26 @@ class Coin extends React.Component {
     render() {
         return (
             <div className="coin-holder">
-              <img onClick={this.flip}
-                    src={ IMAGES[this.state.facing] }
-                    alt="coin"
-                    className={ "coin" + (this.isSpinning() ? '-spin' : '') }
-              />
-              <div>
-              <img 
-                src={IMAGES['HEAD']}
-                alt="head"
-                onClick={() => this.select('HEAD')} 
-                className={this.state.selected === 'HEAD' ? 'selected' : ''}
-              />
-              <img 
-                src={IMAGES['TAILS']} 
-                alt="tails" 
-                onClick={() => this.select('TAILS')} 
-                className={this.state.selected ===  'TAILS'? 'selected' : ''}
-              />
+              <div className="holder">
+                <img onClick={this.flip}
+                      src={ IMAGES[this.state.facing] }
+                      alt="coin"
+                      className={ "coin" + (this.isSpinning() ? '-spin' : '') }
+                />
+              </div>
+              <div className="options">
+                <img 
+                  src={IMAGES['HEAD']}
+                  alt="head"
+                  onClick={() => this.select('HEAD')} 
+                  className={this.state.selected === 'HEAD' ? 'selected' : ''}
+                  />
+                <img 
+                  src={IMAGES['TAILS']} 
+                  alt="tails" 
+                  onClick={() => this.select('TAILS')} 
+                  className={this.state.selected ===  'TAILS'? 'selected' : ''}
+                  />
               </div>
             </div>
         );

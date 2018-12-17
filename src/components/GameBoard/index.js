@@ -70,16 +70,16 @@ class GameBoard extends React.Component {
   render() {
     if (this.state.looser){
       return (
-        <div>
-          <h1>Lava {this.state.looser} !</h1>
-          <button onClick={this.props.resetGame} >Reset Game</button>
-        </div>
+      <div>
+        <h1>Lava {this.state.looser} !</h1>
+        <button onClick={this.props.resetGame} >Reset Game</button>
+      </div>
       )   
     } else {
       return (
         <div>
           <ul>
-              {this.props.players.map((player, idx) => <li key={player}>{player} - {this.getPlayerStatus(idx)} </li>  )}   
+            {this.props.players.map((player, idx) => <li key={player}>{player} - <span className={ this.getPlayerStatus(idx) }> {this.getPlayerStatus(idx)} </span></li>  )}   
           </ul>
           <h2>Turno de: {this.props.players[this.state.index]}</h2>
           <Coin returnResult={this.updateResult}/>
